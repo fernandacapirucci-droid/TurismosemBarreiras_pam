@@ -4,21 +4,37 @@
     "slug": "Aplicativo",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./src/assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
       "supportsTablet": true
+    
     },
     "android": {
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./src/assets/android-icon-foreground.png",
+        "backgroundImage": "./src/assets/android-icon-background.png",
+        "monochromeImage": "./src/assets/android-icon-monochrome.png"
       }
+      
     },
+    "splash": {
+  "image": "./src/assets/icon.png",
+  "resizeMode": "contain",
+  "backgroundColor": "#ffffff"
+},
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+  [
+    "expo-image-picker",
+    {
+      "photosPermission": "O aplicativo precisa acessar suas fotos para você escolher uma foto de perfil.",
+      "cameraPermission": "O aplicativo precisa acessar sua câmera para tirar uma foto de perfil."
     }
+  ]
+]
   }
 }
